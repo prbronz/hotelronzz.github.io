@@ -1,0 +1,27 @@
+
+table {
+    width: 80%; /* Lebar tabel */
+    margin: 0 auto; /* Membuat tabel menjadi tengah */
+    border-collapse: collapse; /* Menghilangkan garis di antara sel-sel tabel */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Bayangan tabel */
+  }
+  
+  th, td {
+    padding: 12px; /* Jarak antara teks dan batas sel */
+    text-align: left; /* Teks rata kiri dalam sel */
+  }
+  
+  th {
+    background-color: #f2f2f2; /* Warna latar belakang header */
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f2f2f2; /* Warna latar belakang baris genap */
+  }
+  
+  /* Membuat tabel responsif (agar dapat menyusut pada perangkat berlayar kecil) */
+  @media (max-width: 600px) {
+    table {
+      width: 100%;
+    }
+  }
